@@ -7,7 +7,7 @@ const Check = () => {
 
 	const SubmitFunc = (evt) => {
 		evt.preventDefault();
-		if (pasRef.current?.value == 'Oybek') {
+		if (pasRef.current?.value.toLowerCase() === 'oybek') {
 			localStorage.setItem('checkToken', 'token bor deb tassavur qilamiz');
 			navigate('/');
 		} else {
